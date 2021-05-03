@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  
+  /* background: url('/static/images/desktop-bg.jpg') no-repeat center center / cover; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+.heading {
+  text-align: center;
+}
+
+.ruler {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.ruler hr {
+  width: 50%;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #ff3636;
+}
+
+.underline {
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  margin-top: 50px;
+  color: #000;
+}
+
+
+.underline::after {
+  content: "";
+  background-color: #333;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  top: 100%;
+  left: 0;
+}
+
+.r1{
+  width: 100%;
+}
+
+
+
+
+
+/*============== Navbar ============= */
+
+.navbar-nav{
+  text-align: center;
+}
+.nav-item{
+  margin: 0 10px;
+  display: inline-block;
+}
+.navbar-nav li{
+    margin-right: 20px;
+    position: relative;
+}
+.navbar-nav li::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #ff3636;
+    height: 2px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 250ms ease-in;
+}
+.navbar-nav li:hover::after{
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+/* ================ NavBar End================== */
+
+
+
+/* ===================== Profile ================ */
+
+.profile{
+  position: relative;  
+  background-image: linear-gradient(180deg,#343a40,#343a40);
+  /* background: url('/static/images/background_6.png') no-repeat center center / cover; */
+  color: white;
+}
+
+.profile-data{
+    margin-top: 20px;
+}
+
+.profile-data ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container1 {
+  height: 100%;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.profile-card {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 20px;
+  width: 80%;
+  /* border-right: 1px solid #e2e2e2; */
+}
+
+
+.profile-card font {
+  font-family: "Poppins", sans-serif;
+}
+
+.profile-card .profile-links ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-links ul li{
+  position: relative;
+  list-style: none;
+}
+
+.profile-links ul li a {
+  position: relative;
+  color: #343a40;
+  /* color: #e2e2e2; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  padding: 0.8rem;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+  box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.profile-links ul li a:hover{
+  color: #999;
+  transform: translateY(-10px);
+  transition: 0.3s ease-in;
+  box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), 2px 24px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.profile-card-2 {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px 20px;
+  width: 100%;
+}
+.name {
+  margin-top: 20px;
+}
+.typer {
+  font-size: 30px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.welcome-text {
+  /* font-size: 40px; */
+  margin-top: 20px;
+}
+
+/* ==================Profile End ============= */
+
+
+/*=================== About ===================*/
+
+.about {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  padding-top: 50px;
+  background-color: #f7f7f7;
+}
+
+
+.about .heading{
+    margin-top: 20px;
+}
+
+/* progress bars */
+
+.skills-box{
+  display: flex;
+}
+
+.skills{
+  width: 50%;
+  margin-right: 20px;
+}
+
+.skills ul{
+  list-style: none;
+  margin-top: 20px;
+}
+
+.tip1,.tip2,.tip3,.tip4{
+  color: #ff3636;
+  font-size: 20px;
+}
+
+.progress{
+  height: 2px !important;
+}
+
+.progress-bar{
+  background-color: #ff3636;
+  /* height: 1px !important; */
+}
+
+.tip1{
+  margin-left: calc(90% - 20px);
+}
+.tip2{
+  margin-left: calc(85% - 20px);
+}
+.tip3{
+  margin-left: calc(50% - 20px);
+}
+.tip4{
+  margin-left: calc(90% - 20px);
+}
+
+/* resume */
+
+.resume{
+  position: relative;
+  width: 50%;
+  text-align: center;
+}
+
+.resume h4{
+  text-align: left;
+}
+
+.resume a{
+  color: #343a40;
+}
+
+.resume-box{
+  display: inline-block;
+  align-items: center;
+  padding: 10px 20px;
+  border: 1px solid #e2e2e2;
+  border-radius: 20px;
+  width: 300px;
+  margin-top: 30px;
+}
+
+.resume-box:hover{
+  transform: translate(-10px,-10px);
+  box-shadow:  inset -1px -1px 2px rgba(0, 0, 0, 0.2), 2px 24px 10px rgba(0, 0, 0, 0.2);
+}
+
+.resume-box img{
+  width: 100px;
+  height: 100px;
+}
+
+.resume-box p{
+  margin-top: 20px;
+}
+/*=================== About End =====================*/
+
+/* ================== Portfolio ==================== */
+
+.portfolio{
+  background-color: white;
+}
+
+.portfolio .heading{
+  margin-top: 40px;
+}
+
+.card p {
+  height: 100px;
+  overflow: hidden;
+}
+
+.card-body.showContent p {
+  height: auto;
+}
+
+
+
+/* ================== Portfolio End ================= */
+
+/* ================== POR ===================*/
+.por{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 30px;
+  background-color: #f7f7f7;
+}
+
+.subtitle{
+  color: grey;
+  font-size: 13px;
+}
+
+/* ================== POR End ================*/
+
+
+/* ================== Contact ================ */
+.contact{
+  padding-top: 50px;
+  margin-top: 30px;
+  background-color: white;
+}
+
+.contact img{
+  width: 100px;
+  height: 100px;
+}
+
+.mail-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  /* border: 1px solid #e2e2e2; */
+  /* border-radius: 20px; */
+  width: 100%;
+  margin: 30px;
+  color: #343a40;
+}
+
+.mail-box p{
+  margin-left: 10px;
+}
+
+/* ===============Contact End ================ */
+
+/*================ footer===================== */
+
+footer{
+  background-color: #343a40;
+  padding:50px 20px ;
+  color: #f7f7f7;
+  margin-top: 100px;
+}
+
+footer .profile-links ul{
+  display: flex;
+  align-items: center;
+  justify-content: center
+  ;
+}
+
+footer h6{
+  text-align: center;
+  font-family: "Poppins", sans-serif ;
+}
+
+/*===== footer End===== */
+
+
+/* =========== responsive ========= */
+
+@media only screen and (max-width: 480px) {
+  /* .profile {
+    height: calc(var(--vh, 1vh) * 100);
+  }
+  .profile-card {
+    border-right: none;
+    border-bottom: 1px solid #343a402f;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .profile-card font{
+    display: inline-block;
+    margin-left: 10px;
+}
+  .profile-img{
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+    }
+  
+  .profile-card-2{
+      margin: 15px;
+  } */
+  .profile-card{
+    border-bottom: 1px solid #343a402f;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  ul{
+    list-style: none;
+    margin-top: 30px;
+  } 
+}
+
+
+@media only screen and (max-width:768px) {
+  .profile {
+    height: calc(var(--vh, 1vh) * 100);
+  }
+  .profile-card {
+    border-right: none;
+  }
+  .skills-box{
+    flex-direction: column;
+  }
+  .skills{
+    width: 100%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .profile {
+    height: 100vh;
+  }
+}
+
+/* Extra large devices (laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
